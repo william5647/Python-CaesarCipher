@@ -5,7 +5,7 @@ def encrypted(string,shift):
 			cypher=cypher+char
 		elif char.isupper():
 			cypher=cypher+chr((ord(char)+shift-65)%26+65) #extract the ord of the character
-								     #ASCII value of uppercase is 65
+								      #ASCII value of uppercase is 65
 		else:
 			cypher=cypher+chr((ord(char)+shift-97)%26+97)
 	return cypher
